@@ -8,7 +8,6 @@
  * Description - Prints if random generated number is +tive, zero or -tive
  * Return: Always 0 (Success)
  */
- 
 int main(void)
 {
 	int n;
@@ -23,4 +22,3 @@ int main(void)
 		printf("%d is positive\n", n);
 	return (0);
 }
-
