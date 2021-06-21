@@ -2,7 +2,7 @@
 /**
  * main - program that prints all possible different combinations of three digits
  *
- * Return: 0;
+ * Return: 0
  */
 
 int main(void)
@@ -30,7 +30,7 @@ int main(void)
 					}
 
 					putchar(',');
-					putcar(' ');
+					putchar(' ');
 					}
 				}
 			}
@@ -39,5 +39,5 @@ int main(void)
 
 	putchar('\n');
 
-	return;
+	return(0);
 }
