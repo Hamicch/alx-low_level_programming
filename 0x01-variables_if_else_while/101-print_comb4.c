@@ -11,9 +11,9 @@ int main(void)
 	int n;
 	int j;
 
-	for (i = 48; n < 58; i++)
+	for (i = 48; i < 58; i++)
 	{
-		for (n = 48; n < 58; j++)
+		for (n = 48; n < 58; n++)
 		{
 			if (n > i)
 			{
