@@ -3,7 +3,7 @@
 /**
  * main - Print "Holberton"
  *
- * Return: Always0 (Success)
+ * Return: Always 0 (Success)
  */
 
 int main(void)
@@ -13,7 +13,7 @@ int main(void)
 
 	while (i < 9)
 	{
-		_putchar(school_name[i]);
+		_putchar(name_of_school[i]);
 		i++;
 	}
 	_putchar('\n');
