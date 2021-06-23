@@ -6,10 +6,8 @@
  * Return: Always 0 (Success)
  */
 
-int _abs(int)
-{
-	int a;
-	
+int _abs(int a)
+{	
 	a = _abs(-1);
 	_putchar(a);
 
