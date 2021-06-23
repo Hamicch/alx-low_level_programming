@@ -21,7 +21,7 @@ void jack_bauer(void)
 				break;
 			while (sec1 <= 6)
 			{
-				
+
 				while (sec2 <= 9)
 				{
 					_putchar(hr1 + '0');
