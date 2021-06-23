@@ -1,10 +1,11 @@
 #include "holberton.h"
 
 /**
- * islower - Checks for lower case
+ * _islower - Checks for lower case
  *
- * Return - 1 if Successful
- * Return - 0 if failed
+ * @c: Number to be checked
+ *
+ * Return - 0 (Failure) OR 1 (Success)
  */
 
 int _islower(int c)
