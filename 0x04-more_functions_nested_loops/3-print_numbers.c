@@ -4,10 +4,10 @@
  * print_numbers - Prints 0 - 9 
  * followed by a new line.
  *
- * Return: no value
+ * Return: void
  */
 
-void prin_numbers(void)
+void print_numbers(void)
 {
 	int i;
 
