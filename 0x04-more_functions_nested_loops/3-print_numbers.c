@@ -6,6 +6,7 @@
  *
  * Return: no value
  */
+
 void print_numbers(void)
 {
 	int i;
