@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * print_to_98 - Prints numbers from 'n' to 98.
+ * print_to_98 - Prints numbers from n to 98.
  *
  * @n - The starting point (first number to be printed).
  *
