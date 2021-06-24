@@ -1,12 +1,12 @@
 #include "holberton.h"
 
 /**
- * mul - Multiplies two integers
- * 
- * @a: integer one.
- * @b: integer two.
+ * mul - Multiply to integers
  *
- * Return: product of a and b
+ * @a: interger one
+ * @b: interger two
+ *
+ * Return: Proudct of a and b
  */
 
 int mul(int a, int b)
