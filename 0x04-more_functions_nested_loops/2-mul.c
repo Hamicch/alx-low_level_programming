@@ -7,7 +7,7 @@
  * @a: integer one.
  * @b: integer two.
  *
- * Return: Multiplication of the integers
+ * Return: product of a and b
  */
 
 int mul(int a, int b)
