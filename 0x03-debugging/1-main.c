@@ -1,29 +1,19 @@
-#include "holberton.h"
+#include <stdio.h>
 
 /**
- * *largest_number - returns the largest of  numbers
- * @a: first integer
- * @b: second integer
- * @c: third integer
- * Return: larget number
+ * main - cause an infinite loop
+ *
+ * Return: 0
  */
 
-int largest_number(int a, int b, int c)
+int main(void)
 {
-	int largest;
+	int i
+		printf("Infinite loop incoming :(\n");
 
-	if (a >= b && a >= c)
-	{
-		largest= a;
-	}
-	else if (b >= a && b >= c)
-	{
-		largest = b;
-	}
-	else
-	{
-		largest = c;
-	}
+	i = 0;
 
-	return (largest);
+	printf("Infinite loop avoided! \\o/\n");
+
+	return (0);
 }
