@@ -10,9 +10,9 @@
  * Return: Multiplication of the integers
  */
 
-int mul(int num1, int num2)
+int mul(int a, int b)
 {
-	int mul = num1 * num2;
+	int mul = a * b;
 
 	return (mul);
 }
