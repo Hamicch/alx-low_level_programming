@@ -10,11 +10,9 @@ int main(void)
 {
 	int i;
 
-	printf("Infinite loop incoming :(\n");
-
 	i = 0;
 
-	printf("Infinite loop avoided! \\o/\n");
+	positive_or_negative(i);
 
 	return (0);
 }
