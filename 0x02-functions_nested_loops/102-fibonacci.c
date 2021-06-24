@@ -10,7 +10,7 @@
 int main(void)
 {
 	int i, l;
-	long n1, n2 next;
+	long n1, n2, next;
 
 	n1 = 1;
 	n2 = 2;
@@ -29,6 +29,6 @@ int main(void)
 			n2 = next;
 		}
 	}
-	printf('\n');
+	printf("\n");
 	return (0);
 }
