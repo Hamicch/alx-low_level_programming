@@ -19,7 +19,7 @@ void jack_bauer(void)
 		{
 			if (hr1 == 2 && hr2 == 4)
 				break;
-			while (sec1 <= 6)
+			while (sec1 < 6)
 			{
 
 				while (sec2 <= 9)
