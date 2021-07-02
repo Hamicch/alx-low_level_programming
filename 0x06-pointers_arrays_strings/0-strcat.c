@@ -1,13 +1,13 @@
 #include "holberton.h"
 
 /**
- * _strcat - concatenate two strings
+ * _strcat - concatenates two strings
  *
  * @dest: destination string; src string is appended to it
  *
- * @src: source string; gets appended to dest string
+ * @src: Source string; gets appended to dest string
  *
- * Return: Point to dest
+ * Return: Pointer to dest
  */
 
 char *_strcat(char *dest, char *src)
