@@ -2,10 +2,13 @@
 #include <stdio.h>
 
 /**
- * _strcat - ry point
- * @dest: pointer
- * @src: pointer
- * Return: Always 0 (Success)
+ * _strcat - concatenate two strings
+ *
+ * @dest: destination string; src string is appended to it
+ *
+ * @src: source string; gets appended to dest string
+ *
+ * Return: Point to dest
  */
 
 char *strcat(char *dest, char *src)
