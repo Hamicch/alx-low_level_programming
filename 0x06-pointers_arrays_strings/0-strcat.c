@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <stdio.h>
 
 /**
  * _strcat - concatenate two strings
@@ -11,7 +10,7 @@
  * Return: Point to dest
  */
 
-char *strcat(char *dest, char *src)
+char *_strcat(char *dest, char *src)
 {
 	int i = 0;
 	int j = 0;
