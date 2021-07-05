@@ -3,15 +3,15 @@
 /**
  * swap_int - Swap the value of two integers
  *
- * @a: An integer to be swapped
- * @b: An integer to be swapped
+ * @a: 1st integer to be swapped
+ * @b: 2nd integer to be swapped
  *
  * Return: Nothing
  */
 
 void swap_int(int *a, int *b)
 }
-
-	*a = 100;
-	*b = 50;
+	int swp = *a;
+	*a = *b;
+	*b = swp;
 }
