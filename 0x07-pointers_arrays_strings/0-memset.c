@@ -6,7 +6,7 @@
  *
  * @s: Pointer to a memory area
  *
- * Value that is to fill up memory area @s
+ * @b: Value that is to fill up memory area @s
  *
  * @n: number of bytes of memory area @s to be filled with @b
  *
