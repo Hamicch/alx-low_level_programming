@@ -19,7 +19,7 @@ int main(void)
 
 	while (num < 2645)
 	{
-		random - rand() % 122;
+		random = rand() % 122;
 
 		if (random > 32)
 		{
