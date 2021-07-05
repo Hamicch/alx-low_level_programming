@@ -29,7 +29,7 @@ int main(void)
 		}
 	}
 
-	*key = (2722 - num);
+	*key = (2772 - num);
 	*(key + 1) = '\n';
 	printf("%s", k);
 	return (0);
