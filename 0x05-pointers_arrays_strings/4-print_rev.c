@@ -1,12 +1,13 @@
 #include "holberton.h"
 
 /**
- * print_rev - Print a string in reverse
+ * rev_string = reverse a string
  *
- * @s The string to be printed
+ * @s: String to be reversed
  *
- * Return: Void
+ * Return: void
  */
+
 
 void print_rev(char *s)
 {
