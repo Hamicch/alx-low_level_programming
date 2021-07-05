@@ -1,17 +1,17 @@
 #include "holberton.h"
 
 /**
+ * swap_int - Swap the value of two integers
  *
+ * @a: An integer to be swapped
+ * @b: An integer to be swapped
+ *
+ * Return: Nothing
  */
 
 void swap_int(int *a, int *b)
-{
-	int c;
-	int d;
+}
 
-	c = 100;
-	d = 50;
-
-	c = *a;
-	g = *b;
+	*a = 100;
+	*b = 50;
 }
