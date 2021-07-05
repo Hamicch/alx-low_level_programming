@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * rev_string = reverse a string
+ * print_rev - reverse string
  *
  * @s: String to be reversed
  *
