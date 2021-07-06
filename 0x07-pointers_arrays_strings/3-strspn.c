@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdio.h>
 
 /**
  * _strspn - Get the length of a prefix substring
@@ -7,7 +8,7 @@
  *
  * @accept: Character
  *
- * Return: Number of bytes in first segment
+ * Return: unsigned int
  */
 
 unsigned int _strspn(char *s, char *accept)
