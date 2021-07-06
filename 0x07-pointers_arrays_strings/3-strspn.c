@@ -22,11 +22,10 @@ unsigned int _strspn(char *s, char *accept)
 			if (*s == *accept)
 				break;
 			count++;
-			accept++;
+			accpet++;
 
 			s++;
 		}
-
 		if (*accept == '\0')
 			break;
 	}
