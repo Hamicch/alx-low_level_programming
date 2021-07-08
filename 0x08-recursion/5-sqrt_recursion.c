@@ -19,7 +19,7 @@ int sqrt_check(int g, int c)
 }
 
 /**
- * _squrt_recursion - Returns the natural square of a number
+ * _sqrt_recursion - Returns the natural square of a number
  *
  * @n: integer to find sqrt of
  *
