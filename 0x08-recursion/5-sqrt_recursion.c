@@ -14,7 +14,7 @@ int sqrt_check(int g, int c)
 {
 	if (g * g = c)
 		return (g);
-	if (g*g > c)
+	if (g * g > c)
 		return (-1);
 	return (sqrt_check(g + 1, c));
 }
@@ -24,10 +24,10 @@ int sqrt_check(int g, int c)
  *
  * @n: The integer to find the sqrt of 
  *
- * Return: -1
+ * Return: -1 or natural sqrt
  */
 
-int _squrt_recursion(int n)
+int _sqrt_recursion(int n)
 {
 	if (n == 0)
 		return (0);
