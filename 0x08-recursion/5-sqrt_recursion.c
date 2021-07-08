@@ -7,7 +7,6 @@
  * @c: Number to find sqrt of
  *
  * Return: -1 or sqrt of c
- * 
  */
 
 int sqrt_check(int g, int c)
@@ -20,11 +19,11 @@ int sqrt_check(int g, int c)
 }
 
 /**
- * _squrt_recursion - Returns the natural square root of @n
+ * _squrt_recursion - Returns the natural square of a number
  *
- * @n: The integer to find the sqrt of 
+ * @n: integer to find sqrt of
  *
- * Return: -1 or natural sqrt
+ * Return: Natural square root or -1
  */
 
 int _sqrt_recursion(int n)
