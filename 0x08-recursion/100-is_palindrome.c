@@ -14,7 +14,7 @@
  * Return: 0 or 1
  */
 
-int check(char *s, int end, int pair)
+int check(char *s, int start, int end, int pair)
 {
 	if ((start == end && pair != 0) || (start == end + 1 && pair == 0))
 		return (1);
