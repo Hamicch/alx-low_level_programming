@@ -1,23 +1,40 @@
-#include <stdio.h>
+#include "holberton.h"
+
+void print_string(char *str);
 
 /**
- * whatsmyname - A program that print its name followed
- * by a newline
+ * main - Prints its name
  *
- * @argc: Argument character
+ * @argc: length of @argv
  *
- * @argv: Argument variable
+ * @argv: Array of strings of the the program arguments
  *
- * Return: it's name
+ * Return: 0, Success
  */
 
-int main(int argc, char *argv[])
+int main(int argc __attribute__((unused), char *argv[])
 {
-	int i;
+	print_string(argv[0]);
+	_putchar('\n');
 
-	for (i = 0; i < argc; i++)
+	return (0);
+}
+
+/**
+ * print_string - Prints all char of a string
+ *
+ * @str: Pointer to string
+ *
+ * Return: void
+ */
+
+void print_string(char *str)
+{
+	int i = 0;
+
+	while (str[i] != '\0')
 	{
-		printf("%s\n", argv[i]);
+		_putchar(str[i]);
+		i++;
 	}
-	return 0;
 }
