@@ -3,7 +3,7 @@
 void print_string(char *str);
 
 /**
- * main _ Prints its name
+ * main - Prints its name
  *
  * @argc: Length of argv
  *
