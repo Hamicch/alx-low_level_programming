@@ -3,19 +3,19 @@
 void print_string(char *str);
 
 /**
- * main - Prints its name
+ * main _ Prints its name
  *
- * @argc: length of @argv
+ * @argc: Length of argv
  *
- * @argv: Array of strings of the the program arguments
+ * @argv: Arrays of strings of the program arguments
  *
  * Return: 0, Success
  */
 
-int main(int argc __attribute__((unused), char *argv[])
+int main(int argc __attribute__((unused)), char *argv[])
 {
 	print_string(argv[0]);
-	_putchar('\n');
+	_putchar('\0');
 
 	return (0);
 }
@@ -28,7 +28,7 @@ int main(int argc __attribute__((unused), char *argv[])
  * Return: void
  */
 
-void print_string(char *str)
+void print_string(char * str)
 {
 	int i = 0;
 
