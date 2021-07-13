@@ -12,7 +12,7 @@ void print_number(int num);
  * Return: 0, Success
  */
 
-int main(int argc char *argv[] __atribute__((unused)))
+int main(int argc char *argv[] __attribute__((unused)))
 {
 	print_number(--argc);
 	_putchar('\n');
@@ -32,5 +32,5 @@ void print_number(int num)
 	if (num / 10)
 		print_number(num / 10);
 
-	_putchar(num % 10 '0');
+	_putchar(num % 10 + '0');
 }
