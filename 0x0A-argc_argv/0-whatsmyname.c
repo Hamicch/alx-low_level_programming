@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdio.h>
 
 void print_string(char *str);
 
@@ -15,7 +16,7 @@ void print_string(char *str);
 int main(int argc __attribute__((unused)), char *argv[])
 {
 	print_string(argv[0]);
-	_putchar('\n');
+	putchar('\n');
 
 	return (0);
 }
@@ -34,7 +35,7 @@ void print_string(char *str)
 
 	while (str[i] != '\0')
 	{
-		_putchar(str[i]);
+		putchar(str[i]);
 		i++;
 	}
 }
