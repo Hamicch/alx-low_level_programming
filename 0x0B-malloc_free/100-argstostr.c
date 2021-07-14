@@ -19,7 +19,7 @@ char *argstostr(int ac, char **av)
 	int t_count = 0;
 	char *result;
 
-	if (ac == 0 || av == NUL)
+	if (ac == 0 || av == NULL)
 		return ('\0');
 
 	for (i = 0; i < ac; i++)
