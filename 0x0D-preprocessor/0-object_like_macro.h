@@ -1,3 +1,3 @@
-#ifndef MACRO_OBJECT_LIKE_H
+#ifndef SIZE
 #define SIZE 1024
-#endif
+#endif //#ifndef SIZE
