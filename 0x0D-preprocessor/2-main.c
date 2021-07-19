@@ -6,10 +6,10 @@
  * Return: Name of file program compiled from
  */
 
-int main(void)
+int main()
 {
 	
-	printf(FILENAME);
+	printf(__FILE__);
 	printf("\n");
 
 	return (0);
