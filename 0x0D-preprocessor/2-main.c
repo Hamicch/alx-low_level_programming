@@ -2,5 +2,5 @@
 
 int main()
 {
-	printf(_FILE_);
+	printf(__FILE_NAME__);
 }
