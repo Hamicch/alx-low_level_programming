@@ -1,8 +1,16 @@
 #include <stdio.h>
-#define FILENAME __FILE__
+
+/**
+ * main - Entry point
+ *
+ * Return: Name of file program compiled from
+ */
 
 int main(void)
 {
 	
-	printf(FILENAME "\n");
+	printf(FILENAME);
+	printf("\n");
+
+	return (0);
 }
