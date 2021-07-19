@@ -1,6 +1,8 @@
-#include <stdlib.h>
+#include <stdio.h>
+#define FILENAME __FILE__
 
-int main()
+int main(void)
 {
-	printf(__FILE_NAME__);
+	
+	printf(FILENAME "\n");
 }
