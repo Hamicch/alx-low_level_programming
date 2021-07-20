@@ -1,5 +1,5 @@
-#include "dog.h"
 #include <stdlib.h>
+#include "dog.h"
 
 int _strLen(char *str);
 void fillMem(char *str, int strLen, char *dest);
@@ -28,7 +28,7 @@ dog *new_dog(char *name, float age, char *owner)
 		return (NULL);
 
 	nameLen = _strLen(name);
-	n_dog->name == malloc(sizeof(char) * nameLen + 1);
+	n_dog->name = malloc(sizeof(char) * nameLen + 1);
 
 	if (n_dog->name == NULL)
 	{
@@ -74,7 +74,7 @@ int _strLen(char *str)
 }
 
 /**
- * fillMen - Copy string literal to allocated memory
+ * fillMem - Copy string literal to allocated memory
  * 
  * @str: String literal
  *
