@@ -22,7 +22,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	dog_t *n_dog;
 	int nameLen, ownerLen;
 
-	n_dog = malloc(sizeof(dog_t));
+	n-dog = malloc(sizeof(dog_t));
 
 	if (n_dog == NULL)
 		return (NULL);
@@ -75,7 +75,7 @@ int _strLen(char *str)
 
 /**
  * fillMem - Copy string literal to allocated memory
- * 
+ *
  * @str: String literal
  *
  * @strLen: @str length
