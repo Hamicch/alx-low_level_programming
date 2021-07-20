@@ -3,7 +3,7 @@
 
 /**
  * free_dog - Free dog memory
- * @d: dog
+ * @d: Dog
  */
 
 void free_dog(dog_t *d)
