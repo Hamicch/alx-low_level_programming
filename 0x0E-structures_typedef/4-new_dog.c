@@ -17,7 +17,7 @@ void fillMem(char *str, int strLen, char *dest);
  * NULL if insufficient memory was available (FAILURE)
  */
 
-dog *new_dog(char *name, float age, char *owner)
+dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *n_dog;
 	int nameLen, ownerLen;
