@@ -4,7 +4,7 @@
 /**
  * struct op - Struct op
  *
- * @opp: The operator
+ * @op: The operator
  *
  * @f: Thefunction associated
  */
