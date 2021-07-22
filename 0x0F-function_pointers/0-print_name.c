@@ -6,11 +6,14 @@
  *
  * @name: The name to print
  *
+ * @f: function pointer
+ *
  * Return: Nothing
  *
  */
 
 void print_name(char *name, void (*f)(char *))
 {
-	printf("%s/n", name);
+	if (f)
+		f(name)
 }
