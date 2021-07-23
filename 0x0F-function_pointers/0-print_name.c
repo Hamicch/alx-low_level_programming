@@ -8,7 +8,7 @@
  * @f: A callback function that prints @name
  */
 
-void array_iterator(int *array, size_t size, void (*action)(int))
+void print_name(char *array, void (*f)(char *))
 {
 	if (f)
 		f(name);
