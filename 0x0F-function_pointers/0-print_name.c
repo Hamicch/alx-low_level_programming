@@ -3,9 +3,11 @@
 /**
  * print_name - Prints a name
  *
- * @name: Pointer to a string
+ * @name: The name to print
  *
  * @f: A callback function that prints @name
+ *
+ * Return: Nothing
  */
 
 void print_name(char *name, void (*f)(char *))
