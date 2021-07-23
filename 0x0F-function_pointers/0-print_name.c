@@ -3,13 +3,12 @@
 /**
  * print_name - Prints a name
  *
- * @name: The name to print
+ * @name: Pointer to a string
  *
- * @f: Pointer function
- *
+ * @f: A callback function that prints @name
  */
 
-void print_name(char *name, void (*f)(char *))
+void array_iterator(int *array, size_t size, void (*action)(int))
 {
 	if (f)
 		f(name);
