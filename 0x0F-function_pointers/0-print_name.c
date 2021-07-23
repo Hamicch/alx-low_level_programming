@@ -8,7 +8,7 @@
  * @f: A callback function that prints @name
  */
 
-void print_name(char *array, void (*f)(char *))
+void print_name(char *name, void (*f)(char *))
 {
 	if (f)
 		f(name);
