@@ -13,12 +13,12 @@
 
 int main(int argc, char *argv[])
 {
-	int n-bytes, i;
+	int n_bytes, i;
 	int (*prog)(int, char **) = &main;
 
 	if (argc == 2)
 	{
-		n_nytes = atoi(argv[1]);
+		n_bytes = atoi(argv[1]);
 		if (n_bytes < 0)
 		{
 			printf("Error\n");
