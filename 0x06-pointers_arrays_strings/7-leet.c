@@ -1,9 +1,9 @@
 #include "holberton.h"
 
 /**
- * leet - encodes a string into 1337
- * @c: The variable of *c pointer
- * Retutn: String that is encoded
+ * leet - Encodes a string into 1337
+ * @c: String of variable pointer
+ * Return: String that is encoded
  */
 
 char *leet(char *c)
