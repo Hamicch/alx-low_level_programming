@@ -2,7 +2,7 @@
 
 /**
  * leet - encodes a string into 1337
- * @c: String
+ * @c: The variable of *c pointer
  * Retutn: String that is encoded
  */
 
