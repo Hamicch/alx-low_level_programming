@@ -3,7 +3,6 @@
 
 /**
  * print_list - prints to standard output
- * @list: List to print
  * @h: A node in list_t
  * Return: The number of nodes
  */
@@ -22,4 +21,4 @@ size_t print_list(const list_t *h)
                 num_of_nodes++;
         }
         return (num_of_nodes);
-
+}
