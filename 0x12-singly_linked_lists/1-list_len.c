@@ -2,9 +2,9 @@ include <stdlib.h>
 #inclue "lists.h"
 
 /**
- * list_len - Calulates the number of elements in a list_t
- * @h: Pointer to the head node of the list_t
- * Return: size_t, the number of nodes in a list_t
+ * list_len - Prints the number of elements in a linked list
+ * @h: Pointer to the head node of the linked list
+ * Return: size_t, the number of nodes in a linked list
  */
 
 size_t list_len(const list_t *h)
