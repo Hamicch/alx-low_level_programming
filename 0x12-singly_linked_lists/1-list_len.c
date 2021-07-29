@@ -7,7 +7,7 @@ include <stdlib.h>
  * Return: size_t, the number of nodes in a list_t
  */
 
-size_t print_len(const list_t *h)
+size_t list_len(const list_t *h)
 {
 	size_t num_of_nodes = 0;
 
