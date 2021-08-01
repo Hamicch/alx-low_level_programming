@@ -1,15 +1,17 @@
 section .data
-	greeting: db "Hello, Holberton",0x0a
+	msg: db "Hello, Holberton",0x0a
+	msglen equ $-msg
 
 section .text
 	global main
 
 main:
-	mov rax, 1
-	mov rdi, 1
-	mov rsi, [greeting] ; Array to write
-	mov rdx, 17 ; Write 17 bytes
+	; write HelloHolberton to screen
+	mov eax, 1 ; syscall for write
+	mov edi, 1
+	mov ecx, msg
+	mov edx, msglen
 	syscall
-	mov rax, 60 ; 60 is exit
-	mov rdi, 0
+	mov eax, 60
+	mov ebx, 1
 	syscall
