@@ -12,6 +12,6 @@ main:
 	mov ecx, msg
 	mov edx, msglen
 	syscall
-	mov eax, 60
-	mov ebx, 1
+	mov eax, 60 ; 60 is exit
+	xor edi, edi ; exit (0)
 	syscall
