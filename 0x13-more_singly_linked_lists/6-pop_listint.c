@@ -17,7 +17,7 @@ int pop_listint(listint_t **head)
 		return (0);
 
 	node_to_delete = *head;
-	*head = node_To_delete->next;
+	*head = node_to_delete->next;
 	n = node_to_delete->n;
 	free(node_to_delete);
 
