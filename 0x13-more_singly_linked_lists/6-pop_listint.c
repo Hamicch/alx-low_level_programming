@@ -10,19 +10,16 @@
 
 int pop_listint(listint_t **head)
 {
-	listint_t *placeholder;
+	listint_t *node_to_delete;
 	int n;
 
-
-	if (*head || head == NULL)
+	if (head || (*head) == NULL)
 		return (0);
 
-	placeholder = *head;
-	*head = placeholder->next;
-	n = placeholder->n;
-	free(placeholder);
+	node_to_delete = *head;
+	*head = node_To_delete->next;
+	n = node_to_delete->n;
+	free(node_to_delete);
 
 	return (n);
-
-
 }
