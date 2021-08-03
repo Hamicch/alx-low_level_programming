@@ -1,5 +1,5 @@
 #include "lists.h"
-#include <stdlib>
+#include <stdlib.h>
 
 /**
  * pop_listint - Deletes the node of a listint_t list
