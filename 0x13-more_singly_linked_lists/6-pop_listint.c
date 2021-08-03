@@ -14,7 +14,7 @@ int pop_listint(listint_t **head)
 	int next_node;
 
 
-	if (!(*head))
+	if (*head == NULL)
 		return (0);
 
 	placeholder = *head;
