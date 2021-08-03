@@ -33,7 +33,7 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 
 		while (last_node->next != NULL)
 			lastnode = lastnode->next;
-		lastnode = lastnode->new_head;
+		lastnode->next = new_head;
 
 	return (new_head);
 }
