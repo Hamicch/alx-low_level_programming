@@ -1,36 +1,47 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
+#include "holberton.h"
 
 /**
- * read_textfile - Reads a text file and prints it to the POSIX stdout.
- * Return: The number of letters it could read and print
+ * read_textfile - Reads a text file and prints it to the POSIX stdout
+ * @filename: Name of the file that's read
+ * @letters: The number of letters read and printed
+ * Return: The number of letters it could read and print, 0 if file cannot
+ * be printed or read, 0 if @filename is NULL, 0 if write fails or doesn't
+ * write the expected amount of bytes
  */
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	ssize_t fd;
+	int fd, _read, _write;
+	char *buffer;
 
-	letters[468];
+	if (filename == NULL)
+		return (0);
 
-	fd = open("filename", O_RDONLY);
+	buffer = malloc(sizeof(char) * letters);
+	if (buffer == NULL)
+		return (0);
 
-	if (!fd || filename == NULL)
+	fd = open(filename, O_RDONLY, 600);
+	if (fd == -1)
+	{
+		free(buffer);
+		return (0);
+	}
+	_read = read(fd, buffer, letters);
+	if (_read == -1)
+	{
+		free(buffer);
+		return (0);
+	}
+
+	_write = write(STDOUT_FILENO, buffer, _read);
+	if (_write == -1 || _write != _read)
 	{
 		return (0);
-		exit (1);
-	};
+	}
 
-	read = (fd, letters, 468);
-
-	while (fd != EOF)
-	{
-		printf("%u\n", read);
-		read = (fd, letters, 468);
-		read = nf;
-	};
-
+	free(buffer);
 	close(fd);
-
-	return (0);
+	return (_write);
 }
