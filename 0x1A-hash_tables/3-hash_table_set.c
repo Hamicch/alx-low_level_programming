@@ -1,41 +1,68 @@
 #include "hash_tables.h"
 
 /**
- * hash_table_set - adds an element to the hash table
- * @ht: hash table
- * @key: the key (can't be empty string)
- * @value: value associated with the key (it can be empty string)
- * Return: 1 on success 0 otherwise
+ * str_copy - Creates a copy of a given string.
+ * @s: The string to copy.
+ *
+ * Return: A pointer to the created string, otherwise NULL.
  */
+char *str_copy(const char *s)
+{
+	int i, len;
+	char *s_c = NULL;
 
+	if (s != NULL)
+	{
+		len = strlen(s);
+		s_c = malloc(sizeof(char) * (len + 1));
+		if (s_c != NULL)
+		{
+			for (i = 0; i < len; i++)
+				s_c[i] = s[i];
+			s_c[i] = '\0';
+		}
+	}
+	return (s_c);
+}
+
+/**
+ * hash_table_set - Adds an element to a given hash table.
+ * @ht: The hash table that will contain the element.
+ * @key: The key of the element to add.
+ * @value: The value of the element to add.
+ *
+ * Return: 1 if the addition was successful, otherwise 0.
+ */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-	int idx;
-	hash_node_t *node;
+	unsigned long idx;
+	hash_node_t *tmp = NULL, *new_node = NULL;
 
-	if (key == NULL || strlen(key) == 0 || ht == NULL)
-		return (0);
-
-	idx = key_index((const unsigned char *) key, ht->size);
-
-	node = ht->array[idx];
-	while (node != NULL)
+	if ((ht != NULL) && (ht->array != NULL)
+		&& (key != NULL) && (strlen(key) > 0))
 	{
-		if (strcmp(node->key, key) == 0)
+		idx = key_index((unsigned char *)key, ht->size);
+		tmp = ht->array[idx];
+		while (tmp != NULL)
 		{
-			free(node->value);
-			node->value = strdup(value);
+			if (strcmp(tmp->key, key) == 0)
+			{
+				free(tmp->value);
+				tmp->value = str_copy(value);
+				return (1);
+			}
+			tmp = tmp->next;
+		}
+		tmp = ht->array[idx];
+		new_node = malloc(sizeof(hash_node_t));
+		if (new_node != NULL)
+		{
+			new_node->key = str_copy(key);
+			new_node->value = str_copy(value);
+			new_node->next = tmp;
+			ht->array[idx] = new_node;
 			return (1);
 		}
-		node = node->next;
 	}
-
-	node = malloc(sizeof(hash_node_t));
-	if (node == NULL)
-		return (0);
-	node->key = strdup(key);
-	node->value = strdup(value);
-	node->next = ht->array[idx];
-	ht->array[idx] = node;
-	return (1);
+	return (0);
 }
