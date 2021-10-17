@@ -3,7 +3,7 @@
  * @left: The left-sided number
  * @right: The right-sided number
  * 
- *  Return: The sum of the two numbers
+ * Return: Result
  *       */
 int add(int left, int right)
 {
@@ -15,7 +15,7 @@ int add(int left, int right)
  * @left: The left-sided number
  * @right: The right-sided number
  *
- * Return: The difference of the two numbers
+ * Return: Result
  */
 int sub(int left, int right)
 {
@@ -27,7 +27,7 @@ int sub(int left, int right)
  * @left: The left-sided number
  * @right: The right-sided number
  * 
- * Return: The product of the two numbers
+ * Return: Result
  */
 int mul(int left, int right)
 {
@@ -39,7 +39,7 @@ int mul(int left, int right)
  * @left: The left-sided number
  * @right: The right-sided number
  *
- * Return: The quotient of the two numbers
+ * Return: Result
  */
 int div(int left, int right)
 {
@@ -51,7 +51,7 @@ int div(int left, int right)
  * @left: The left-sided number
  * @right: The right-sided number
  * 
- * Return: The modulo of the two numbers
+ * Return: Result
  */
 int mod(int left, int right)
 {
